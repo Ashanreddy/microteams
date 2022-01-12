@@ -1,0 +1,3 @@
+C:\Users\user\Desktop\ASHA\inheritance4\inheritance4\obj\Debug\inheritance4.csproj.AssemblyReference.cache
+C:\Users\user\Desktop\ASHA\inheritance4\inheritance4\obj\Debug\inheritance4.csproj.SuggestedBindingRedirects.cache
+C:\Users\user\Desktop\ASHA\inheritance4\inheritance4\obj\Debug\inheritance4.csproj.CoreCompileInputs.cache

@@ -1,0 +1,7 @@
+C:\Users\user\Desktop\ASHA\inheritance1\inheritance1\bin\Debug\inheritance1.exe.config
+C:\Users\user\Desktop\ASHA\inheritance1\inheritance1\bin\Debug\inheritance1.exe
+C:\Users\user\Desktop\ASHA\inheritance1\inheritance1\bin\Debug\inheritance1.pdb
+C:\Users\user\Desktop\ASHA\inheritance1\inheritance1\obj\Debug\inheritance1.csproj.SuggestedBindingRedirects.cache
+C:\Users\user\Desktop\ASHA\inheritance1\inheritance1\obj\Debug\inheritance1.csproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\ASHA\inheritance1\inheritance1\obj\Debug\inheritance1.exe
+C:\Users\user\Desktop\ASHA\inheritance1\inheritance1\obj\Debug\inheritance1.pdb

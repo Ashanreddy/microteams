@@ -1,0 +1,8 @@
+C:\Users\user\Desktop\ASHA\Emp\Emp\bin\Debug\Emp.exe.config
+C:\Users\user\Desktop\ASHA\Emp\Emp\bin\Debug\Emp.exe
+C:\Users\user\Desktop\ASHA\Emp\Emp\bin\Debug\Emp.pdb
+C:\Users\user\Desktop\ASHA\Emp\Emp\obj\Debug\Emp.csproj.AssemblyReference.cache
+C:\Users\user\Desktop\ASHA\Emp\Emp\obj\Debug\Emp.csproj.SuggestedBindingRedirects.cache
+C:\Users\user\Desktop\ASHA\Emp\Emp\obj\Debug\Emp.csproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\ASHA\Emp\Emp\obj\Debug\Emp.exe
+C:\Users\user\Desktop\ASHA\Emp\Emp\obj\Debug\Emp.pdb
