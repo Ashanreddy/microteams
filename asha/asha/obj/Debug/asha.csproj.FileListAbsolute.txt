@@ -1,0 +1,8 @@
+C:\Users\user\Desktop\ASHA\asha\asha\obj\Debug\asha.csproj.AssemblyReference.cache
+C:\Users\user\Desktop\ASHA\asha\asha\obj\Debug\asha.csproj.SuggestedBindingRedirects.cache
+C:\Users\user\Desktop\ASHA\asha\asha\obj\Debug\asha.csproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\ASHA\asha\asha\bin\Debug\asha.exe.config
+C:\Users\user\Desktop\ASHA\asha\asha\bin\Debug\asha.exe
+C:\Users\user\Desktop\ASHA\asha\asha\bin\Debug\asha.pdb
+C:\Users\user\Desktop\ASHA\asha\asha\obj\Debug\asha.exe
+C:\Users\user\Desktop\ASHA\asha\asha\obj\Debug\asha.pdb

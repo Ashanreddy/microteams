@@ -1,0 +1,7 @@
+C:\Users\user\Desktop\ASHA\add\add\bin\Debug\add.exe.config
+C:\Users\user\Desktop\ASHA\add\add\bin\Debug\add.exe
+C:\Users\user\Desktop\ASHA\add\add\bin\Debug\add.pdb
+C:\Users\user\Desktop\ASHA\add\add\obj\Debug\add.csproj.SuggestedBindingRedirects.cache
+C:\Users\user\Desktop\ASHA\add\add\obj\Debug\add.csproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\ASHA\add\add\obj\Debug\add.exe
+C:\Users\user\Desktop\ASHA\add\add\obj\Debug\add.pdb

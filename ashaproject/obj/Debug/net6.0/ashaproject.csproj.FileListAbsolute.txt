@@ -1,0 +1,15 @@
+C:\Users\user\Desktop\ASHA\ashaproject\bin\Debug\net6.0\ashaproject.exe
+C:\Users\user\Desktop\ASHA\ashaproject\bin\Debug\net6.0\ashaproject.deps.json
+C:\Users\user\Desktop\ASHA\ashaproject\bin\Debug\net6.0\ashaproject.runtimeconfig.json
+C:\Users\user\Desktop\ASHA\ashaproject\bin\Debug\net6.0\ashaproject.dll
+C:\Users\user\Desktop\ASHA\ashaproject\bin\Debug\net6.0\ref\ashaproject.dll
+C:\Users\user\Desktop\ASHA\ashaproject\bin\Debug\net6.0\ashaproject.pdb
+C:\Users\user\Desktop\ASHA\ashaproject\obj\Debug\net6.0\ashaproject.csproj.AssemblyReference.cache
+C:\Users\user\Desktop\ASHA\ashaproject\obj\Debug\net6.0\ashaproject.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\Desktop\ASHA\ashaproject\obj\Debug\net6.0\ashaproject.AssemblyInfoInputs.cache
+C:\Users\user\Desktop\ASHA\ashaproject\obj\Debug\net6.0\ashaproject.AssemblyInfo.cs
+C:\Users\user\Desktop\ASHA\ashaproject\obj\Debug\net6.0\ashaproject.csproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\ASHA\ashaproject\obj\Debug\net6.0\ashaproject.dll
+C:\Users\user\Desktop\ASHA\ashaproject\obj\Debug\net6.0\ref\ashaproject.dll
+C:\Users\user\Desktop\ASHA\ashaproject\obj\Debug\net6.0\ashaproject.pdb
+C:\Users\user\Desktop\ASHA\ashaproject\obj\Debug\net6.0\ashaproject.genruntimeconfig.cache
