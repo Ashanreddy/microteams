@@ -5,6 +5,34 @@ import { Component } from '@angular/core';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
+
+
+
 export class AppComponent {
-  title = 'faculty-profile';
+  title = 'SpringFood-app';
+
+  static total:number;
+
+  static modelUser: User ={
+    username:'',
+    password:'',
+    email:'',
+    phone:0,
+    firstname:'',
+    lastname:'',
+    address:'',
+    merchant:null
+  };
+
 }
+export interface User{
+  username:string;
+  password:string;
+  firstname:string;
+  lastname:string;
+  email:string;
+  address:string;
+  phone:number;
+  merchant:boolean;
+}
+
