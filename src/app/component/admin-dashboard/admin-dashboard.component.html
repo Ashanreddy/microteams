@@ -1,0 +1,218 @@
+
+<style>
+    .faculty-list {
+      margin-top: 20px;
+    }
+    
+    .faculty-list h2 {
+      text-align: center;
+      color: #0b5e52e8;
+      font-size: 28px;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+    }
+    
+    .faculty-list table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 20px;
+    }
+    
+    .faculty-list th,
+    .faculty-list td {
+      padding: 12px;
+      text-align: left;
+    }
+    
+    .faculty-list th {
+      background-color: #f8f8f8;
+      color: #555;
+      font-weight: bold;
+    }
+    
+    .faculty-list td {
+      border-bottom: 1px solid #ccc;
+    }
+    
+    .faculty-list tr:hover {
+      background-color: #f0f0f0;
+    }
+    
+    .faculty-list .actions {
+      display: flex;
+      align-items: center;
+    }
+    
+    .faculty-list .actions button {
+      margin-right: 1px;
+      padding: 4px 8px;
+      border: none;
+      color: #fff;
+      font-size: 14px;
+      font-weight: bold;
+      text-transform: uppercase;
+      cursor: pointer;
+      border-radius: 6px;
+      transition: transform 0.3s ease;
+    }
+    
+    .faculty-list .actions button.update {
+      background-color: #1a5696;
+    }
+    
+    .faculty-list .actions button.delete {
+      background-color: #9c1818;
+    }
+    
+    .faculty-list .actions button.details {
+      background-color: #156628;
+    }
+    
+    .faculty-list .actions button:hover {
+      transform: scale(1.1);
+    }
+    
+    .fade-in-animation {
+      animation: fade-in 0.5s ease;
+    }
+    
+    @keyframes fade-in {
+      0% {
+        opacity: 0;
+        transform: translateY(-10px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    
+    </style>
+    
+    <!-- <div class="faculty-list">
+      <h2 class="text-center  mb-2">Faculty List</h2>
+    
+      <table class="table table-striped fade-in-animation">
+        <thead>
+          <tr>
+            <th>Faculty Image</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Designation</th>
+            <th>Email Id</th>
+            <th>Phone Number</th>
+            <th>Experience</th>
+            <th>Qualification</th>
+            <th>Research and Publication</th>
+            <th>Research Guidance</th>
+            <th>Achievements</th>
+            <th>No of Publications</th>
+            <th>No of Patent</th>
+            <th>No of Book Chapters</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let faculty of faculties" class="fade-in-animation">
+            <td>
+              <div *ngFor="let file of faculty.facultyimage">
+                <img [src]="file.url" alt="Faculty Image" width="50">
+                <td>{{ faculty.facultyimage }}</td>
+              </div>
+            </td>
+             
+            <td>{{ faculty.firstName }}</td>
+            <td>{{ faculty.lastName }}</td>
+            <td>{{ faculty.designation }}</td>
+            <td>{{ faculty.email }}</td>
+            <td>{{ faculty.phoneNumber }}</td>
+            <td>{{ faculty.experience }}</td>
+            <td>{{ faculty.qualification }}</td>
+            <td>{{ faculty.researchPublications }}</td>
+            <td>{{ faculty.researchGuidance }}</td>
+            <td>{{ faculty.achievements }}</td>
+            <td>{{ faculty.noofpublications }}</td>
+            <td>{{ faculty.noofpatent }}</td>
+            <td>{{ faculty.noofbookchapters }}</td>
+            <td class="actions"> -->
+             
+                 <!-- <button (click)="updateFaculty(faculty.id)"  class="btn"><i class="fas fa-edit"></i>
+                 
+                </button>
+                <button (click)="deleteFaculty(faculty.id)"  class="btn"><i class="fa fa-trash"></i>
+                  
+                </button>
+                <button (click)="facultyDetails(faculty.id)"  class="btn"><i class="fa fa-bars"></i>
+                  
+                </button>  -->
+                <div class="faculty-list">
+                  <h2 class="text-center mb-2">Faculty List</h2>
+               
+                  <div *ngFor="let faculty of faculties" class="fade-in-animation faculty-details">
+                    <div class="faculty-image">
+                         <img [src]="faculty.facultyimages" >
+                        <!-- <button (click)="showImage(faculty.facultyimages)" class="btn btn-edit">
+                          <i class="	far fa-file"></i>
+                        </button>
+                    </div>  -->
+                    </div>
+                    
+                
+                    <div class="faculty-info">
+                      <!-- <div><span class="label">First Name:</span> {{ faculty.firstName }}</div>
+                      <div><span class="label">Last Name:</span> {{ faculty.lastName }}</div> -->
+                      <div class="faculty-info">
+                        <div class="faculty-name">
+                        <div><span class="label"></span> <span class="value">{{ faculty.firstName }} {{ faculty.lastName }}</span></div>
+                      </div>
+                      </div>
+                      
+
+                      
+                      <div><span class="label">Designation:</span> {{ faculty.designation }}</div>
+                      <div><span class="label">Email:</span> {{ faculty.email }}</div>
+                      <div><span class="label">Phone Number:</span> {{ faculty.phoneNumber }}</div>
+                      <div><span class="label">Experience:</span> {{ faculty.experience }}</div>
+                      <div><span class="label">Qualification:</span> {{ faculty.qualification }}</div>
+                      <div><span class="label">Research Publications:</span> {{ faculty.researchPublications}}</div>
+                      <div><span class="label">Research Guidance:</span> {{ faculty.researchGuidance }}</div>
+                      <div><span class="label">Achievements:</span> {{ faculty.achievements }}</div>
+                      <div><span class="label">No of Publications:</span> {{ faculty.noofpublications }}</div>
+                      <div><span class="label">No of Patent:</span> {{ faculty.noofpatent }}</div>
+                      <div><span class="label">No of Book Chapters:</span> {{ faculty.noofbookchapters }}</div>
+                    </div>
+                    <div class="faculty-actions">
+                      <div class="button-group">
+                        <button (click)="updateFaculty(faculty.id)" class="btn btn-edit">
+                          <i class="fas fa-edit"></i>
+                        </button>
+                        <button (click)="deleteFaculty(faculty.id)" class="btn btn-delete">
+                          <i class="fas fa-trash"></i>
+                        </button>
+                        <button (click)="facultyDetails(faculty.id)" class="btn btn-details">
+                          <i class="fas fa-bars"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                <!-- <div class="button-group">
+                  <button (click)="updateFaculty(faculty.id)" class="btn btn-edit">
+                    <i class="fas fa-edit"></i> 
+                  </button>
+                  <button (click)="deleteFaculty(faculty.id)" class="btn btn-delete">
+                    <i class="fas fa-trash"></i> 
+                  </button>
+                  <button (click)="facultyDetails(faculty.id)" class="btn btn-details">
+                    <i class="fas fa-bars"></i> 
+                  </button>
+                </div> -->
+                
+            
+            <!-- </td>
+          </tr> -->
+        <!-- </tbody>
+      </table> -->
+    <!-- </div> -->
+    

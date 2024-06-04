@@ -1,0 +1,170 @@
+<style>
+    .faculty-details {
+      margin-top: 20px;
+      padding: 30px;
+      background-color: #f8f8f8;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      animation: fade-in 0.5s ease;
+    }
+    
+    .faculty-details h3 {
+      text-align: center;
+      color: #1c7d75;
+      font-size: 28px;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+    }
+    
+    .faculty-details label {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 5px;
+      color: #444;
+      font-family: 'Arial', sans-serif;
+    }
+    
+    .faculty-details p {
+      margin-top: 5px;
+      font-size: 16px;
+      color: #666;
+      font-family: 'Arial', sans-serif;
+    }
+    
+    .faculty-details .highlight {
+      font-weight: bold;
+      color: #374554;
+      font-style: italic;
+    }
+    
+    .faculty-details .divider {
+      margin: 20px 0;
+      border-top: 1px dashed #ccc;
+    }
+    
+    .faculty-details .section-title {
+      margin-bottom: 10px;
+      font-size: 20px;
+      color: #0cbb90;
+      font-family: 'Arial', sans-serif;
+    }
+    
+    .faculty-details .section-content {
+      margin-bottom: 20px;
+    }
+    
+    .faculty-details .section-content p {
+      margin: 5px 0;
+      font-family: 'Arial', sans-serif;
+    }
+    
+    .faculty-details .section-content ul {
+      margin: 5px 0;
+      padding-left: 20px;
+      list-style-type: square;
+      color: #666;
+      font-family: 'Arial', sans-serif;
+    }
+    
+    .faculty-details .section-content ul li {
+      margin-bottom: 5px;
+      font-family: 'Arial', sans-serif;
+    }
+    
+    @keyframes fade-in {
+      0% {
+        opacity: 0;
+        transform: translateY(-10px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    </style>
+    
+    <div class="faculty-details">
+      <h3>Faculty Details</h3>
+      <div>
+        <label>Faculty Image:</label>
+        <p>{{faculty.facultyimages}}</p>
+      </div>
+      <div>
+        <label>First Name:</label>
+        <p>{{faculty.firstName}}</p>
+      </div>
+      <div>
+        <label>Last Name:</label>
+        <p>{{faculty.lastName}}</p>
+      </div>
+      <div>
+        <label>Designation:</label>
+        <p>{{faculty.designation}}</p>
+      </div>
+      <div>
+        <label>Email:</label>
+        <p>{{faculty.email}}</p>
+      </div>
+      <div>
+        <label>Phone Number:</label>
+        <p>{{faculty.phoneNumber}}</p>
+      </div>
+      <div class="divider"></div>
+      <div class="section-title">Qualifications</div>
+      <div class="section-content">
+        <p>{{faculty.qualification}}</p>
+      </div>
+      <div class="divider"></div>
+      <div class="section-title">Experience</div>
+      <div class="section-content">
+        <p>{{faculty.experience}}</p>
+      </div>
+      <div class="divider"></div>
+      <div class="section-title">Research Publications</div>
+      <div class="section-content">
+        <ul>
+          <li>{{faculty.researchPublications}}</li>
+        </ul>
+      </div>
+      <div class="divider"></div>
+      <div class="section-title">Research Guidance</div>
+      <div class="section-content">
+        <ul>
+          <li>{{faculty.researchGuidance}}</li>
+        </ul>
+      </div>
+      <div class="divider"></div>
+      <div class="section-title">Achievements</div>
+      <div class="section-content">
+        <ul>
+          <li>{{faculty.achievements}}</li>
+        </ul>
+      </div>
+      <div class="divider"></div>
+      <div class="section-title">No of Publications</div>
+      <div class="section-content">
+        <ul>
+          <li>{{faculty.noofpublications}}</li>
+        </ul>
+      </div>
+      <div class="divider"></div>
+      <div class="section-title">No of Patent</div>
+      <div class="section-content">
+        <ul>
+          <li>{{faculty.noofpatent}}</li>
+        </ul>
+      </div>
+      <div class="divider"></div>
+      <div class="section-title">No of Book Chapters</div>
+      <div class="section-content">
+        <ul>
+          <li>{{faculty.noofbookchapters}}</li>
+        </ul>
+      </div>
+      <div class="divider"></div>
+      <div class="section-title">Specialization</div>
+      <div class="section-content">
+        <p class="highlight">Artificial Intelligence, Machine Learning</p>
+      </div>
+    </div>
+    

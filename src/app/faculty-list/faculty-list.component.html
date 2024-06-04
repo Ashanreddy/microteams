@@ -1,0 +1,131 @@
+<style>
+    .form-container {
+      margin-top: 20px;
+      padding: 30px;
+      background-color: #f8f8f8;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    .form-container h3 {
+      text-align: center;
+      color: #0d9a76;
+      font-size: 28px;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+    }
+    
+    .form-container label {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 5px;
+      color: #2c3e50;
+      font-family: 'Arial', sans-serif;
+    }
+    
+    .form-container input[type="text"] {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-family: 'Arial', sans-serif;
+    }
+    
+    .form-container button[type="submit"] {
+      display: block;
+      width: 100%;
+      margin-top: 20px;
+      padding: 12px;
+      border: none;
+      background-color: #0e7162;
+      color: #fff;
+      font-size: 16px;
+      font-weight: bold;
+      text-transform: uppercase;
+      cursor: pointer;
+      border-radius: 4px;
+      transition: background-color 0.3s ease;
+    }
+    
+    .form-container button[type="submit"]:hover {
+      background-color: #21c5db;
+    }
+    
+    </style>
+    
+    <div class="col-md-6 offset-md-3 form-container">
+      <h3>Create Faculty Profile</h3>
+      <form (ngSubmit)="onsubmit()">
+        <div class="form-group">
+          <label>Faculty Image</label>
+          <input type="file" multiple value="select" #selectFile (change)="onFileSelected($event)">
+        </div><br>
+        <div class="image-list">
+          <div *ngFor="let file of faculty.facultyimages" class="image-item">
+            <img [src]="file.url" *ngIf="file.url">
+          </div>
+        </div>
+        
+        <div class="form-group">
+          <label>First Name</label>
+          <input type="text" class="form-control" id="firstName" [(ngModel)]="faculty.firstName" name="firstName">
+        </div>
+        <div class="form-group">
+          <label>Last Name</label>
+          <input type="text" class="form-control" id="lastName" [(ngModel)]="faculty.lastName" name="lastName">
+        </div>
+        <div class="form-group">
+          <label>Designation</label>
+          <input type="text" class="form-control" id="designation" [(ngModel)]="faculty.designation"
+           name="designation">
+        </div>
+        <div class="form-group">
+          <label>Email Id</label>
+          <input type="text" class="form-control" id="email" [(ngModel)]="faculty.email" name="email">
+        </div>
+        <div class="form-group">
+          <label>Phone Number</label>
+          <input type="text" class="form-control" id="phoneNumber" [(ngModel)]="faculty.phoneNumber" name="phoneNumber">
+        </div>
+        <div class="form-group">
+          <label>Experience</label>
+          <input type="text" class="form-control" id="experience" [(ngModel)]="faculty.experience" name="Experience">
+        </div>
+        <div class="form-group">
+          <label>Qualification</label>
+          <input type="text" class="form-control" id="qualification" [(ngModel)]="faculty.qualification" name="Qualification">
+        </div>
+        <div class="form-group">
+          <label>Research Publications</label>
+          <input type="text" class="form-control" id="researchPublications" [(ngModel)]="faculty.researchPublications" name="researchPublications">
+        </div>
+        <div class="form-group">
+          <label>Research Guidance</label>
+          <input type="text" class="form-control" id="researchGuidance" [(ngModel)]="faculty.researchGuidance" name="researchGuidance">
+        </div>
+        <div class="form-group">
+          <label>No of Publications</label>
+          <input type="text" class="form-control" id="noofpublications" [(ngModel)]="faculty.noofpublications"
+           name="noofpublications">
+        </div>
+        <div class="form-group">
+          <label>No of Patent</label>
+          <input type="text" class="form-control" id="noofpatent" [(ngModel)]="faculty.noofpatent"
+           name="noofpatent">
+        </div>
+        <div class="form-group">
+          <label>No of Book chapters</label>
+          <input type="text" class="form-control" id="noofbookchapters" [(ngModel)]="faculty.noofbookchapters"
+           name="noofbookchapters">
+        </div>
+        <div class="form-group">
+          <label>Achievements</label>
+          
+
+          <input type="text" class="form-control" id="achievements" [(ngModel)]="faculty.achievements" name="achievements">
+        </div>
+        <br>
+        <button class="btn btn-success" type="submit">Submit</button>
+      </form>
+    </div>
+    

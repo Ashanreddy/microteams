@@ -1,0 +1,139 @@
+<style>
+    .faculty-list {
+      margin-top: 20px;
+    }
+    
+    .faculty-list h2 {
+      text-align: center;
+      color: #145242;
+      font-size: 28px;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+    }
+    
+    .faculty-list table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 20px;
+    }
+    
+    .faculty-list th,
+    .faculty-list td {
+      padding: 12px;
+      text-align: left;
+    }
+    
+    .faculty-list th {
+      background-color: #f8f8f8;
+      color: #555;
+      font-weight: bold;
+    }
+    
+    .faculty-list td {
+      border-bottom: 1px solid #ccc;
+    }
+    
+    .faculty-list tr:hover {
+      background-color: #f0f0f0;
+    }
+    
+    .faculty-list .actions {
+      display: flex;
+      align-items: center;
+    }
+    
+    .faculty-list .actions button {
+      margin-right: 5px;
+      padding: 4px 8px;
+      border: none;
+      color: #fff;
+      font-size: 14px;
+      font-weight: bold;
+      text-transform: uppercase;
+      cursor: pointer;
+      border-radius: 6px;
+      transition: transform 0.3s ease;
+    }
+    
+    .faculty-list .actions button.update {
+      background-color: #1e5da1;
+    }
+    
+    .faculty-list .actions button.details {
+      background-color: #136025;
+    }
+    
+    .faculty-list .actions button:hover {
+      transform: scale(1.1);
+    }
+    
+    .fade-in-animation {
+      animation: fade-in 0.5s ease;
+    }
+    
+    @keyframes fade-in {
+      0% {
+        opacity: 0;
+        transform: translateY(-10px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    
+    .table-animation {
+      animation: table-rows-fade-in 0.8s ease;
+    }
+    
+    @keyframes table-rows-fade-in {
+      0% {
+        opacity: 0;
+        transform: translateY(-10px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    
+    </style>
+    
+    <div class="faculty-list">
+      <h2 class="text-center  mb-2">Faculty List</h2>
+    
+      <table class="table table-striped fade-in-animation table-animation">
+        <thead>
+          <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Email Id</th>
+            <th>Phone Number</th>
+            <th>Experience</th>
+            <th>Qualification</th>
+            <th>Research and Publication</th>
+            <th>Research Guidance</th>
+            <th>Achievements</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let faculty of faculties" class="fade-in-animation">
+            <td>{{ faculty.firstName }}</td>
+            <td>{{ faculty.lastName }}</td>
+            <td>{{ faculty.email }}</td>
+            <td>{{ faculty.phoneNumber }}</td>
+            <td>{{ faculty.experience }}</td>
+            <td>{{ faculty.qualification }}</td>
+            <td>{{ faculty.researchPublications }}</td>
+            <td>{{ faculty.researchGuidance }}</td>
+            <td>{{ faculty.achievements }}</td>
+            <td class="actions">
+              <button (click)="updateFaculty(faculty.id)" class="btn btn-info update">Update</button>
+              <button (click)="facultyDetails(faculty.id)" class="btn btn-outline-success details">View Details</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    

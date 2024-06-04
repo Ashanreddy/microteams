@@ -1,0 +1,314 @@
+/* 
+.button-group {
+    display: flex;
+    gap: 1px;
+  }
+  
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    padding: 2px 4px;
+    border: none;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 2px;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .btn i {
+    margin-right: 8px;
+  }
+  
+  .btn.btn-edit {
+    background-color: #1a5696;
+  }
+  
+  .btn.btn-delete {
+    background-color: #9c1818;
+  }
+  
+  .btn.btn-details {
+    background-color: #156628;
+  }
+  
+  .btn:hover {
+    opacity: 0.8;
+  }
+  
+  .button-group {
+    display: flex;
+    gap: 8px;
+  }
+  
+  .btn {
+    padding: 6px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+  }
+  
+  .btn i {
+    margin-right: 4px;
+  }
+  
+  .btn-edit {
+    background-color: #1a5696;
+    color: #fff;
+  }
+  
+  .btn-delete {
+    background-color: #d9534f;
+    color: #fff;
+  }
+  
+  .btn-details {
+    background-color: #5cb85c;
+    color: #fff;
+  }
+  
+  .btn:hover {
+    background-color: #333;
+    transform: scale(1.05);
+  }
+   
+   .faculty-list {
+    margin-top: 20px;
+  }
+  
+  .faculty-details {
+    display:flexbox;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 20px 0;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    animation: fade-in 0.5s ease;
+    font-style: italic;
+    
+  }
+  
+  .faculty-image {
+    flex: 1;
+    text-align: center;
+    align-self: center;
+  }
+  
+  .faculty-image img {
+    max-width: 100px;
+    max-height: 100px;
+  }
+  
+  .faculty-info {
+    flex: 2;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    
+  }
+  
+  .label {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .faculty-actions {
+    flex: 1;
+    text-align: center;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .button-group {
+    display:block;
+    flex-direction:inherit;
+    
+    gap: 20px;
+  }
+  
+  .btn {
+    padding: 10px 8px;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    
+    transition: background-color 0.3s ease;
+   
+  }
+  
+  .btn-edit {
+    background-color: #1a5696;
+    color: white;
+  }
+  
+  .btn-delete {
+    background-color: #9c1818;
+    color: white;
+  }
+  
+  .btn-details {
+    background-color: #156628;
+    color: white;
+  }
+  
+  .btn:hover {
+    background-color: #333;
+  }
+  .btn:not(:last-child) {
+   
+    margin-right: 20px;
+  }
+  
+  .faculty-info {
+   
+  }
+  
+   .label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    
+  }
+  
+  .value {
+    color: #75c4ec; 
+    font-size:30px ;
+  }
+  
+  
+  .value-last-name {
+    color: #9c1818; 
+    
+  }
+  
+  
+  .faculty-image {
+    border: 2px solid #1a5696; 
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    border-radius: 20px; 
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    background-color: #f9f9f9; 
+    height:auto ;
+  }
+  
+  .faculty-img {
+    max-width: 200%;
+    height: auto;
+  }
+  
+  .faculty-image:hover {
+    border-color: #156628; 
+    background-color: #eaeaea; 
+  }
+     */
+     .faculty-list {
+        padding: 50px;
+      }
+      
+      .faculty-details {
+        background-color: #f9f9f9;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        margin: 20px 0;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        display:flexbox;
+      font-style: italic;
+        text-align:center;
+      }
+      
+      .faculty-image {
+        flex: 1;
+        text-align:left;
+        align-self: center;
+      }
+      
+      .faculty-image img {
+        max-width: 100%;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        padding: 5px;
+      }
+      
+      .faculty-content {
+        display: flex;
+        flex-direction: column;
+        flex: 2;
+        margin-left: 20px;
+      }
+      
+      .faculty-info {
+        margin-bottom: 10px;
+      }
+      
+      .faculty-info .label {
+        font-weight: bold;
+        color: #333;
+      }
+      
+      .faculty-info .value {
+        margin-left: 5px;
+      }
+      
+      .faculty-actions {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+      }
+      
+      .button-group button {
+        border: none;
+        padding: 5px;
+        background-color: #f1f1f1;
+        border-radius: 5px;
+        cursor: pointer;
+        bottom: auto;
+      }
+      
+      .button-group button i {
+        font-size: 18px;
+      }
+      
+      .button-group button.btn-edit {
+        color: #3498db;
+      }
+      
+      .button-group button.btn-delete {
+        color: #e74c3c;
+      }
+      
+      .button-group button.btn-details {
+        color: #27ae60;
+      }
+      
+  /* ... your existing styles ... */
+
+  .faculty-info {
+    /* ... your existing styles ... */
+  }
+
+  .faculty-name {
+    margin-bottom: 10px;
+  }
+
+  .value {
+    color: #e84a5f; /* Set the color you want for the first name */
+    font-weight: bold;
+    margin-right: 5px;
+    font-size: 40px;
+  }
+
+  .value {
+    color: #3498db; /* Set the color you want for the last name */
+    font-weight: bold;
+  }
+
+  .btn i {
+    margin-right: 4px;
+  }

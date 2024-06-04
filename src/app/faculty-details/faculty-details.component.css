@@ -1,0 +1,91 @@
+.faculty-details {
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .faculty-details h3 {
+    color: #333;
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+  
+  .faculty-details label {
+    font-weight: bold;
+    color: #555;
+    display: block;
+    margin-top: 10px;
+  }
+  
+  .faculty-details p {
+    margin: 5px 0;
+  }
+  
+  .divider {
+    border-bottom: 1px solid #ddd;
+    margin: 15px 0;
+  }
+  
+  .section-title {
+    font-weight: bold;
+    color: #1a5696;
+    font-size: 18px;
+    margin-top: 20px;
+  }
+  
+  .section-content {
+    margin: 10px 0;
+  }
+  
+  .section-content ul {
+    list-style-type: disc;
+    margin-left: 20px;
+  }
+  
+  .highlight {
+    background-color: #1a5696;
+    color: #fff;
+    padding: 4px 8px;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+  
+  .highlight p {
+    margin: 0;
+  }
+  
+  .btn {
+    padding: 6px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  .btn-primary {
+    background-color: #1a5696;
+    color: #fff;
+  }
+  
+  .btn-danger {
+    background-color: #d9534f;
+    color: #fff;
+  }
+  
+  .btn-success {
+    background-color: #5cb85c;
+    color: #fff;
+  }
+  
+  .btn i {
+    margin-right: 4px;
+  }
+  
+  .btn:hover {
+    background-color: #333;
+    color: #fff;
+  }
+  
